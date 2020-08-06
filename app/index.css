@@ -1,13 +1,13 @@
 .jumbotron {
-  background: rgb(65,247,236);
-  background: linear-gradient(221deg, rgba(65,247,236,1) 0%, rgba(58,110,106,1) 100%);
-  font-family: 'Oswald', sans-serif;
+  background: rgb(65, 247, 236);
+  background: linear-gradient(221deg, rgba(65, 247, 236, 1) 0%, rgba(58, 110, 106, 1) 100%);
+  font-family: "Oswald", sans-serif;
 }
 
 .title {
-    font-family: 'Oswald', sans-serif;
-
+  font-family: "Oswald", sans-serif;
 }
 
-.cook-btn{
-background-color: #D6D2CF;}
+.cook-btn {
+  background-color: #d6d2cf;
+}

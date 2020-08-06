@@ -9,7 +9,7 @@ function Cook() {
   return (
     <>
       <div className="jumbotron jumbotron-fluid">
-        <div className="container">
+        <div className={search ? "container" : "container mt-5"}>
           <div className="row">
             <div className="col-12 col-sm-12 text-center col-md-5 mt-5 pb-4">
               <h1 className="display-3 mt-5">Learn Cooking</h1>
@@ -25,7 +25,7 @@ function Cook() {
           </div>
         </div>
       </div>
-      {search ?  <Search /> : search }
+      {search ? <Search /> : search}
     </>
   );
 }

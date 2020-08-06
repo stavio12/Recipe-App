@@ -12,7 +12,6 @@ function RecipeCard({ recipe }) {
   console.log(ingredient);
   return (
     <>
-      <div className="container">
         <div className="card-group">
           <div className="row">
             {recipe.map((recipes, key) => {
@@ -42,7 +41,6 @@ function RecipeCard({ recipe }) {
             })}
           </div>
         </div>
-      </div>
     </>
   );
 }
