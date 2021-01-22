@@ -3,7 +3,7 @@ import Axios from "axios";
 import SearchResults from "./SearchResults";
 
 function Search() {
-  const [recipeSearch, setRecipeSearch] = useState();
+  const [recipeSearch, setRecipeSearch] = useState("");
   const [result, setResult] = useState([]);
 
   const APP_ID = "36a7b07d";
@@ -15,10 +15,6 @@ function Search() {
     const fetchData = await Axios.get(`https://api.edamam.com/search?q=${recipeSearch}&app_id=${APP_ID}&app_key=${APP_KEY}`);
     setResult(fetchData.data);
   }
-
-  useEffect(() => {
-    getRecipe();
-  }, []);
 
   return (
     <>
@@ -43,8 +39,9 @@ function Search() {
           </div>
         </div>
       </form>
-
-      <SearchResults result={result} />
+      <div className="container">
+        <SearchResults result={result} />
+      </div>
     </>
   );
 }

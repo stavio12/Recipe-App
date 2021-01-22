@@ -1,7 +1,19 @@
-.jumbotron {
-  background: rgb(65, 247, 236);
+body {
+  background: rgb(65, 247, 236) !important;
   background: linear-gradient(221deg, rgba(65, 247, 236, 1) 0%, rgba(58, 110, 106, 1) 100%);
   font-family: "Oswald", sans-serif;
+}
+.jumbotron {
+  background: inherit !important;
+}
+
+.img-cook {
+  border-radius: 10%;
+  width: 100px;
+  background: linear-gradient(221deg, rgba(65, 247, 236, 1) 0%, rgba(58, 110, 106, 1) 100%) !important;
+}
+.img-fluid {
+  opacity: 1;
 }
 
 .title {
@@ -10,4 +22,8 @@
 
 .cook-btn {
   background-color: #d6d2cf;
+}
+
+.card-group {
+  overflow: hidden;
 }
